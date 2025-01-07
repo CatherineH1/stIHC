@@ -9,13 +9,13 @@ stIHC <- function(data) {
   lambdas <- c()
   
   for (col_name in colnames(data)[3:ncol(data)]) {
-    fdaPDE <- smooth.FEM(observations = data[[col_name]],
+    fdaPDE <- suppressWarnings(smooth.FEM(observations = data[[col_name]],
                          locations = NULL,
                          FEMbasis = basis,
                          lambda.selection.criterion = "grid",
                          DOF.evaluation = "stochastic",
                          lambda.selection.lossfunction = "GCV",
-                         lambda = lambda)
+                         lambda = lambda))
     
     coefs <- data.frame(fdaPDE$fit.FEM$coeff)
     lambdas <- rbind(lambdas, fdaPDE$optimization$lambda_solution)
@@ -32,13 +32,13 @@ stIHC <- function(data) {
   lambda <- mean(lambdas)
   
   for (col_name in colnames(data)[3:ncol(data)]) {
-    fdaPDE <- smooth.FEM(observations = data[[col_name]],
+    fdaPDE <- suppressWarnings(smooth.FEM(observations = data[[col_name]],
                          locations = NULL,
                          FEMbasis = basis,
                          lambda.selection.criterion = "grid",
                          DOF.evaluation = "stochastic",
                          lambda.selection.lossfunction = "GCV",
-                         lambda = lambda)
+                         lambda = lambda))
     
     coefs <- data.frame(fdaPDE$fit.FEM$coeff)
     lambdas <- rbind(lambdas, fdaPDE$optimization$lambda_solution)
