@@ -19,11 +19,11 @@ of spatial co-expression. Robust across technologies with varying gene numbers
 and spatial resolution, stIHC provides a powerful tool for decoding the spatial
 organization of gene expression and the functional structure of complex tissues.
 
-#Overview 
+# Overview 
 ...................
 
-#Data
+# Data
 .............................
 
-#Code
+# Code
 ..............................
