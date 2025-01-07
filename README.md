@@ -20,7 +20,9 @@ and spatial resolution, stIHC provides a powerful tool for decoding the spatial
 organization of gene expression and the functional structure of complex tissues.
 
 # Overview 
-...................
+This repository contains the R implementation of stIHC.
+
+An example demonstrating how to use stIHC is provided in simulations.R, along with the data required to reproduce the simulations described in our paper.
 
 # Data
 The Data.zip file contains the datasets required to reproduce the simulations descirbed in Section 3.1, 3.2 and 3.3 of our paper.
