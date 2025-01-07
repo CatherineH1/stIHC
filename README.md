@@ -26,6 +26,12 @@ organization of gene expression and the functional structure of complex tissues.
 The Data.zip file contains the datasets required to reproduce the simulations descirbed in Section 3.1, 3.2 and 3.3 of our paper.
 
 # Code
-The stIHC.R provides the necessary functions. stIHC only takes as input the data, consisting of the xy coordinates of each spot in the first two columns, followed by the the measurement of each gene at every location in the remaning columns.
+The stIHC.R script provides the necessary functions for spatial transcriptomics data analysis. 
 
-stIHC outputs the cluster assignment for each gene and the mean expression of each cluster
+The input to stIHC is a dataset where:
+1. The first two columns contain the xy-coordinates of each spatial spot.
+2. The remaining columns contain the expression measurements for each gene at the corresponding locations.
+
+The output of stIHC includes:
+1. The cluster assignment for each gene.
+2. The mean expression level of each cluster.
