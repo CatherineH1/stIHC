@@ -19,6 +19,8 @@ of spatial co-expression. Robust across technologies with varying gene numbers
 and spatial resolution, stIHC provides a powerful tool for decoding the spatial
 organization of gene expression and the functional structure of complex tissues.
 
+Higgins, C., Li, J.J, Carey, M. Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC): A Novel Method for Identifying Spatial Gene Co-Expression Modules (2025) https://arxiv.org/abs/2502.09574
+
 # Overview 
 This repository contains the R implementation of stIHC.
 
